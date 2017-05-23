@@ -24,5 +24,3 @@ const checkaround = TabNavigator({
 
 
 AppRegistry.registerComponent('checkaround', () => checkaround);
-
-aiaiaaiaiaiaiaiaaiiai dgxgxg
