@@ -38,9 +38,14 @@ export default class List extends Component {
     console.log(this.state.data)
     return (
       <View>
-        <ScrollView>
-          {this.state.data.map(createThumbRow)}
-        </ScrollView>
+        <View style={styles.header}>
+          <Text style={styles.Theader}>CheckAround Application</Text>
+        </View>
+
+          <ScrollView>
+            {this.state.data.map(createThumbRow)}
+          </ScrollView>
+
       </View>
     );
   }
@@ -52,5 +57,15 @@ var styles = StyleSheet.create({
   icon: {
     width: 26,
     height: 26,
-  }
+  },
+  header: {
+    backgroundColor: '#1abc9c',
+    height: 60,
+  },
+  Theader: {
+    textAlign: 'center',
+    padding: 30,
+    fontWeight: 'bold',
+  },
+
 });
